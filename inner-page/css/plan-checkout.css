@@ -1,0 +1,257 @@
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2; /* For body*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --light-orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+}
+
+/* ------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    background-color: var(--gray-white);
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--main-light);
+}
+
+/* -- checkout main container style -- */
+
+.checkout-main-container {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* -- checkout inner container style -- */
+
+.checkout-inner-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.heading-price-plan-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black) ;
+}
+
+.heading h2 {
+    color: var(--light-black);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* -- add-new-btn style -- */
+
+.price-plan-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+    background-color: var(--main-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.price-plan-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- checkout container style */
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -- cc subcon one style -- */
+
+.cc-subcon-one {
+    width: 50%;
+    padding-right: 25px;
+    border-right: 2px solid var(--gray-black);
+}
+
+.cc-subcon-two {
+    width: 50%;
+    padding-left: 25px;
+}
+
+/* -- cc subcon one heading style -- */
+
+.package-modules-heading h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.package-modules-heading {
+    margin-top: 30px;
+}
+
+/* -- required star style -- */
+
+.required {
+    color: var(--red);
+}
+
+/* -- package modules list style -- */
+
+.package-modules-list {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* -- pm list one style -- */
+
+.pm-list-one {
+    width: 50%;
+}
+
+.pm-list-two {
+    width: 50%;
+}
+
+.pm-list-one ul {
+    list-style-type: none;
+    padding-inline-start: 0px!important;
+}
+
+.pm-list-one ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-black);
+    background-color: var(--gray-white);
+    border: 1px solid var(--gray-black);
+    padding: 7.5px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* -- pm list two style -- */
+
+.pm-list-two ul {
+    list-style-type: none;
+    padding-inline-start: 0px!important;
+}
+
+.pm-list-two ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-black);
+    background-color: var(--gray-white);
+    border: 1px solid var(--gray-black);
+    padding: 7.5px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* -- cc subcon two style -- */
+
+.payment-method-duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--gray-black);
+}
+
+.payment-method-duration .pmd-text h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* -- payment method style -- */
+
+.pmd-selection {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 75%;
+}
+
+.pmd-selection select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray-black);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-black);
+}
+
+/* table style */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: var(--gray-white);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-black);
+    padding: 10px;
+    border: 1px solid var(--gray-black);
+}
+
+/* -- payment method style -- */
+
+/* pay btn */
+
+.pay-btn button {
+    background-color: var(--main-green);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}

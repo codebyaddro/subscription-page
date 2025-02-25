@@ -1,0 +1,319 @@
+/* -- font link -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root -- */
+
+:root {
+  --gray-white: #F0F1F2;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray-black: #DDDDDD;
+  --light-black: #212523;
+  --light-black-op: #21252350;
+  --main-green: #157343;
+  --main-light: #37A000;
+  --light-orange: #FD7E14;
+  --green: #008000;
+  --light-green: #e9f6ec;
+  --red: #FF0000;
+  --light-red: #fbeaec;
+}
+
+/* -- body style -- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+/* -- pricing container style -- */
+
+.pricing-container {
+  background-color : var(--gray-white);
+  padding: 50px 0;
+}
+
+/* -- heading part style -- */
+
+.heading-part {
+  text-align: center;
+}
+
+.heading-part h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: -25px;
+}
+
+/* pricing part toggle btn style */
+
+.pricing-toggle-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.pricing-toggle-btn h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* -- toggle switch style start -- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17.5px;
+  width: 17.5px;
+  left: 3px;
+  bottom: 3px;
+  top: 3.25px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+}
+
+/* -- toggle switch style end */
+
+/* -- pricing cart container style */
+
+.pricing-cart-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .pricing-cart-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* -- pricing cart style -- */
+
+.pricing-cart {
+  width: 250px;
+  background-color: var(--white);
+  padding: 25px 15px;
+  border: 2.5px solid var(--);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .pricing-cart {
+    width: 280px;
+  }
+  .pricing-cart-premium {
+    width: 280px!important;
+  }
+}
+
+.pricing-cart-premium {
+  width: 250px;
+  background-color: var(--white);
+  padding: 25px 15px;
+  border: 2.5px solid var(--green);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* -- cart heading -- */
+
+.pricing-cart-header {
+  text-align: center;
+}
+
+.pricing-cart-header img {
+  height: 55px;
+  width: 55px;
+  margin-top: 10px;
+}
+
+.pricing-cart-header h3 {
+  color: var(--light-black);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.money-sign {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.pricing h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--light-black);
+}
+
+.package-v {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.regular-price {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* -- features list style -- */
+
+.features-list-one ul, .features-list-two ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+}
+
+/* -- features list one style -- */
+
+.features-list-one {
+  margin-top: -40px;
+}
+
+.features-list-one ul li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 7.5px;
+}
+
+/* -- flo icon style -- */
+
+.flo-icon {
+  font-size: 20px;
+  color: var(--black);
+  background-color: var(--light-orange);
+  padding: 3.5px;
+  border-radius: 50%;
+  margin-right: 7.5px;
+}
+
+/* -- features list two style -- */
+
+.features-list-two ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7.5px;
+}
+
+/* -- flt icon style -- */
+
+.flt-icon-a {
+  font-size: 15px;
+  color: var(--green);
+  background-color: var(--light-green);
+  padding: 2.5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.flt-icon-i {
+  font-size: 15px;
+  color: var(--red);
+  background-color: var(--light-red);
+  padding: 2.5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+/* -- pricing cart btn style -- */
+
+.pricing-cart-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-cart-btn button {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2.5px solid var(--black);
+  border-radius: 15px;
+  padding: 5px 50px;
+  transition: all 0.3s ease;
+}
+
+.pricing-cart-btn button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2.5px solid var(--black);
+  border-radius: 15px;
+  padding: 5px 50px;
+  transition: all 0.3s ease;
+}
+
+/* -- css end -- */

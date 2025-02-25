@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/inner-page/css/my-sub-info.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Subscription - Page</title>
+</head>
+<body>
+    <div class="subscription-container">
+        <div class="list-container">
+            <div class="heading-add-new-btn">
+                <div class="heading">
+                    <h2>My Subscription</h2>
+                </div>
+            </div>
+            <div class="list-short-dpdwn-search-box">
+                <div class="list-short-dpdwn">
+                    <h3>Show</h3>
+                    <select name="10" id="">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">All</option>
+                    </select>
+                    <h3>entries</h3>
+                </div>
+                <div class="search-box">
+                    <legend>Search: <input type="text"></legend>
+                </div>
+            </div>
+            <div class="table-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th title="SL">SL</th>
+                            <th title="Subscription ID">Subscription ID</th>
+                            <th title="Package Name">Package Name</th>
+                            <th title="Total Amount">Total Amount</th>
+                            <th title="Created at">Created at</th>
+                            <th title="Next Invoice Date">Next Invoice Date</th>
+                            <th title="Remaining Day">Remaining Day</th>
+                            <th title="Package Duration">Package Duration</th>
+                            <th title="Package Status">Payment Status</th>
+                            <th title="Active Status">Active Status</th>
+                            <th title="Action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1101</td>
+                            <td>Basic</td>
+                            <td><span>৳</span> 999</td>
+                            <td>01-02-2025</td>
+                            <td>01-03-2025</td>
+                            <td>28 Days</td>
+                            <td>1 Month</td>
+                            <td><span class="payment-received">Received</span></td>
+                            <td><span class="active">Active</span></td>
+                            <td>
+                                <div class="action-btn">
+                                    <a title="Edit" href="#"><i class='edit-icon bx bx-edit'></i></a>
+                                    <a title="Delete" href="#"><i class='delete-icon bx bx-trash'></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1102</td>
+                            <td>Stater</td>
+                            <td><span>৳</span> 2499</td>
+                            <td>01-03-2025</td>
+                            <td>01-04-2025</td>
+                            <td>30 Days</td>
+                            <td>1 Month</td>
+                            <td><span class="payment-pending">Pending</span></td>
+                            <td><span class="inactive">Inactive</span></td>
+                            <td>
+                                <div class="action-btn">
+                                    <a title="Edit" href="#"><i class='edit-icon bx bx-edit'></i></a>
+                                    <a title="Delete" href="#"><i class='delete-icon bx bx-trash'></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1103</td>
+                            <td>Premium</td>
+                            <td><span>৳</span> 3399</td>
+                            <td>01-04-2025</td>
+                            <td>01-05-2025</td>
+                            <td>30 Days</td>
+                            <td>1 Month</td>
+                            <td><span class="payment-due">Due</span></td>
+                            <td><span class="inactive">Inactive</span></td>
+                            <td>
+                                <div class="action-btn">
+                                    <a title="Edit" href="#"><i class='edit-icon bx bx-edit'></i></a>
+                                    <a title="Delete" href="#"><i class='delete-icon bx bx-trash'></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="no-data-available">
+                            <th colspan="11">No data available in table</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="entries-details-list-page-btn">
+                <div class="entries-details">
+                    Showing <span>1</span> to <span>5</span> of <span>5</span> entries
+                </div>
+                <div class="list-page-btn">
+                    <button>Previous</button>
+                    <h4><span>1</span></h4>
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
